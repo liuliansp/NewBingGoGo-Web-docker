@@ -2,7 +2,7 @@ FROM gradle:jdk17-alpine
 RUN apk update
 RUN apk add git openssh
 WORKDIR /clone-workspace
-RUN git clone https://github.com/jianjianai/NewBingGoGo-Web NewBingGoGo-Web
+RUN git clone https://github.com/liuliansp/NewBingGoGo-Web NewBingGoGo-Web
 
 WORKDIR /clone-workspace/NewBingGoGo-Web
 RUN gradle shadow
